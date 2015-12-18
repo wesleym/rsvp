@@ -10,4 +10,7 @@ func TestRoot(t *testing.T) {
 	w := httptest.NewRecorder()
 	r := &http.Request{}
 	Root(w, r)
+	if w.Code != http.StatusOK {
+		t.Fail()
+	}
 }
