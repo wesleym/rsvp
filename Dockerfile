@@ -10,4 +10,4 @@ COPY . /go/src/app
 RUN go-wrapper download
 RUN go-wrapper install
 
-EXPOSE 80
+EXPOSE 8080
